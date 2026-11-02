@@ -101,7 +101,7 @@ def ddpm_sample(eps_fn, shape, sch, gen=None, device="cpu"):
             x = mean + var.sqrt() * torch.randn(shape, generator=gen, device=device)
         else:
             x = mean
-    return x
+    return x.clamp(-1, 1)
 
 
 def ddim_timesteps(sch, steps):
