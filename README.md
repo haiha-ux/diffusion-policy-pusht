@@ -77,7 +77,7 @@ What this does and does not show: the diffusion samples differ from each other (
 
 To stay under the 10 MB per-file limit the U-Net weights are stored in fp16 and cast to fp32 inside the graph (`export_onnx.py`); this costs a maximum noise-prediction difference of 7e-4 against the fp32 PyTorch model (fp32 export parity: 1.9e-6; `docs/model.json` records both).
 
-Checks done (no browser available here, so **page rendering is unverified**):
+Checks done, including one pass in Chromium: the models load, dragging and the angle slider resample, and the paths draw.
 - every file the page references returns 200 from `python -m http.server`, and the three onnxruntime-web 1.22.0 CDN files (`ort.min.js`, `ort-wasm-simd-threaded.wasm/.mjs`) return 200;
 - `tests/node_check.js` (Node 20, onnxruntime-web 1.22.0): the JS DDIM from fixed noise matches the PyTorch fp32 sampler with a maximum difference of 1.55e-4 in normalised units; the chunked BC model also runs;
 - `tests/page_smoke.js` runs the page's inline script under Node with a stubbed DOM and canvas and the real models: it loads both models, samples 12 chunks (about 0.5 s single-threaded in Node), and issues 310 line segments; pixels, pointer-event handling in a real browser, and CDN loading in a browser are not exercised.
