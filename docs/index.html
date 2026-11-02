@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head><meta charset="utf-8"><title>Diffusion Policy on PushT: sampled action chunks</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<style>
+body{font:15px/1.5 system-ui,sans-serif;max-width:760px;margin:2rem auto;padding:0 1rem;color:#222}
+canvas{width:100%;max-width:512px;border:1px solid #ccc;border-radius:4px;touch-action:none;display:block}
+input[type=range]{width:100%;max-width:512px} .row{display:flex;gap:1rem;flex-wrap:wrap} .row img{width:230px;border:1px solid #ddd}
+small{color:#555} code{background:#f3f3f3;padding:0 3px}
+</style></head><body>
+<h1>Diffusion Policy on PushT (state-based)</h1>
+<p><b>What is live:</b> the page runs two exported models in your browser through onnxruntime-web 1.22.0: the diffusion noise model (1D conditional U-Net, DDIM with 10 steps, sampled here in JavaScript) and the chunked BC network, both seed 0.
+Drag the <b>T</b> or the <b>agent</b> (blue circle), or turn the angle slider; the page then samples 12 action chunks from the diffusion model (coloured) and one from the BC network (black).
+Each line is the sequence of 16 absolute target positions the agent would be told to go to; the thick part is the first 8, the part a receding-horizon controller actually executes before re-planning.</p>
+<p><b>What is not live:</b> there is <b>no physics</b> in this page, so nothing here shows what the T does after the agent moves. The paths are open-loop predictions for the state you set (the agent is assumed to be at rest). The green T is the goal. The three GIFs at the bottom are <b>pre-rendered</b> closed-loop episodes from the Python simulator.</p>
+<canvas id="cv" width="512" height="512"></canvas>
+<p>T angle: <span id="ang"></span> rad <input id="sl" type="range" min="0" max="6.283" step="0.01" value="2.0" disabled></p>
+<p id="st"><small>(loading models...)</small></p>
+<p><small>Spread between the coloured lines is the model's own uncertainty about where to go; if they overlap the model is nearly deterministic at that state. In the repository's measurement on held-out demo states the samples were close together in most states (see README, multimodality), so do not expect two clearly separate routes everywhere. Dragging into poses far from anything in the 206 demonstrations gives unreliable output.</small></p>
+<h2>Pre-rendered closed-loop episodes</h2>
+<p>Same initial state (seed 100000, the first of the 50 evaluation states, not selected), 300 steps, one model each. A single episode is an anecdote; the README has the 3 seeds x 50 episodes.</p>
+<div class="row" id="gifs"></div>
+<script src="https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/ort.min.js"></script>
+<script src="policy.js"></script>
+<script>
+const GOAL=[256,256,Math.PI/4], SC=30, L=4;
+const V1=[[-L*SC/2,SC],[L*SC/2,SC],[L*SC/2,0],[-L*SC/2,0]], V2=[[-SC/2,SC],[-SC/2,L*SC],[SC/2,L*SC],[SC/2,SC]];
+const cv=document.getElementById('cv'), cx=cv.getContext('2d'), sl=document.getElementById('sl'), st=document.getElementById('st');
+let S=[300,200,250,280,2.0];   // agent xy, T origin xy, T angle (same convention as the dataset)
+const poly=(p,a,v)=>v.map(([x,y])=>[p[0]+Math.cos(a)*x-Math.sin(a)*y, p[1]+Math.sin(a)*x+Math.cos(a)*y]);
+const Y=y=>512-y;
+function drawT(p,a,fill){for(const v of [V1,V2]){cx.beginPath();poly(p,a,v).forEach(([x,y],i)=>i?cx.lineTo(x,Y(y)):cx.moveTo(x,Y(y)));cx.closePath();cx.fillStyle=fill;cx.fill();}}
+function inside(pt,a,p){return [V1,V2].some(v=>{const q=poly(p,a,v);let c=false;for(let i=0,j=3;i<4;j=i++){if((q[i][1]>pt[1])!=(q[j][1]>pt[1])&&pt[0]<(q[j][0]-q[i][0])*(pt[1]-q[i][1])/(q[j][1]-q[i][1])+q[i][0])c=!c}return c})}
+let paths=null, bc=null;
+function draw(){
+ cx.clearRect(0,0,512,512);cx.fillStyle='#fff';cx.fillRect(0,0,512,512);
+ drawT(GOAL.slice(0,2),GOAL[2],'#bfe8bf'); drawT(S.slice(2,4),S[4],'#8a96a8');
+ const line=(pts,col,w,dash)=>{cx.beginPath();cx.setLineDash(dash||[]);cx.strokeStyle=col;cx.lineWidth=w;pts.forEach(([x,y],i)=>i?cx.lineTo(x,Y(y)):cx.moveTo(x,Y(y)));cx.stroke();cx.setLineDash([])};
+ if(paths) paths.forEach((p,k)=>{const c=`hsla(${(k*37)%360},80%,45%,0.8)`;line(p,c,1,[3,3]);line(p.slice(1,9),c,3)});
+ if(bc){line(bc,'rgba(0,0,0,.9)',1,[3,3]);line(bc.slice(0,8),'#000',3)}
+ cx.beginPath();cx.arc(S[0],Y(S[1]),15,0,7);cx.fillStyle='#4a7bd0';cx.fill();
+ document.getElementById('ang').textContent=S[4].toFixed(2);
+}
+let M,sdp,sbc,busy=false,again=false;
+async function infer(){
+ if(!sdp){return} if(busy){again=true;return} busy=true;
+ do{again=false;const t0=performance.now();
+  const od=encObs(M,'dp_s0',S), ob=encObs(M,'bcc_s0',S);
+  const out=await ddimSample(ort,sdp,M,od,12,Math.random);
+  paths=[];for(let i=0;i<12;i++){const p=[];for(let h=0;h<16;h++)p.push(decAct(M,'dp_s0',[out[(i*16+h)*2],out[(i*16+h)*2+1]]));paths.push(p)}
+  const b=await bcChunk(ort,sbc,M,ob);bc=[];for(let h=0;h<16;h++)bc.push(decAct(M,'bcc_s0',[b[h*2],b[h*2+1]]));
+  st.innerHTML=`<small>12 diffusion samples + 1 BC chunk in ${(performance.now()-t0).toFixed(0)} ms (10 DDIM steps, onnxruntime-web ${ort.env.versions&&ort.env.versions.web||'1.22.0'}). Coloured: diffusion policy samples. Black: BC with action chunks.</small>`;
+  draw();
+ }while(again);busy=false;
+}
+let drag=null;
+const pos=e=>{const r=cv.getBoundingClientRect();return [(e.clientX-r.left)/r.width*512, 512-(e.clientY-r.top)/r.height*512]};
+cv.onpointerdown=e=>{const p=pos(e);cv.setPointerCapture(e.pointerId);
+ if(Math.hypot(p[0]-S[0],p[1]-S[1])<28)drag=['a',0,0]; else if(inside(p,S[4],S.slice(2,4)))drag=['t',S[2]-p[0],S[3]-p[1]];};
+cv.onpointermove=e=>{if(!drag)return;const p=pos(e),c=v=>Math.max(20,Math.min(492,v));
+ if(drag[0]=='a'){S[0]=c(p[0]);S[1]=c(p[1])}else{S[2]=c(p[0]+drag[1]);S[3]=c(p[1]+drag[2])}draw();infer()};
+cv.onpointerup=()=>{drag=null};
+sl.oninput=()=>{S[4]=+sl.value;draw();infer()};
+fetch('rollouts/manifest.json').then(r=>r.json()).then(m=>{const names={dp_s0:'Diffusion Policy (DDIM-10)',bcc_s0:'BC with action chunks',bc_s0:'BC (single step)'};
+ document.getElementById('gifs').innerHTML=m.map(x=>`<div><img src="rollouts/${x.name}.gif"><br><small>${names[x.name]}: max coverage ${x.coverage.toFixed(2)}, ${x.success?'succeeded':'not above 0.95'} in ${x.steps} steps</small></div>`).join('')});
+draw();
+(async()=>{try{
+ if(typeof ort==='undefined')throw new Error('onnxruntime-web did not load (CDN blocked or offline)');
+ ort.env.wasm.wasmPaths='https://cdn.jsdelivr.net/npm/onnxruntime-web@1.22.0/dist/';
+ M=await fetch('model.json').then(r=>r.json());
+ [sdp,sbc]=await Promise.all([ort.InferenceSession.create('dp_noise.onnx'),ort.InferenceSession.create('bc_chunk.onnx')]);
+ sl.disabled=false;sl.value=S[4];await infer();
+}catch(e){st.innerHTML='<small>live models unavailable: '+e.message+'</small>'}})();
+</script></body></html>
