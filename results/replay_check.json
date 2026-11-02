@@ -1,0 +1,302 @@
+{
+ "n_episodes": 42,
+ "mean_max_coverage": 0.9027210424598053,
+ "success_rate": 0.07142857142857142,
+ "median_mean_block_err_px": 1.0498723880200082e-05,
+ "episodes": [
+  {
+   "ep": 0,
+   "max_coverage": 0.8898037830427018,
+   "success": false,
+   "mean_block_pos_err_px": 6.99205858956792e-06,
+   "final_block_pos_err_px": 1.2501599551528381e-05
+  },
+  {
+   "ep": 5,
+   "max_coverage": 0.918488084987657,
+   "success": false,
+   "mean_block_pos_err_px": 1.1230853333232884e-05,
+   "final_block_pos_err_px": 1.2499764669939724e-05
+  },
+  {
+   "ep": 10,
+   "max_coverage": 0.9073913968252068,
+   "success": false,
+   "mean_block_pos_err_px": 1.3813867062106693e-05,
+   "final_block_pos_err_px": 1.068915032770567e-05
+  },
+  {
+   "ep": 15,
+   "max_coverage": 0.9007152212880574,
+   "success": false,
+   "mean_block_pos_err_px": 8.728440857427323e-06,
+   "final_block_pos_err_px": 1.1922978758080235e-05
+  },
+  {
+   "ep": 20,
+   "max_coverage": 0.9661294875110699,
+   "success": true,
+   "mean_block_pos_err_px": 2.2779181996729722e-05,
+   "final_block_pos_err_px": 1.0238795402519508e-05
+  },
+  {
+   "ep": 25,
+   "max_coverage": 0.900351982462776,
+   "success": false,
+   "mean_block_pos_err_px": 6.059039996207555e-06,
+   "final_block_pos_err_px": 2.4245456346386697e-05
+  },
+  {
+   "ep": 30,
+   "max_coverage": 0.8933888121218831,
+   "success": false,
+   "mean_block_pos_err_px": 2.366699583883254e-05,
+   "final_block_pos_err_px": 4.102272666725062e-05
+  },
+  {
+   "ep": 35,
+   "max_coverage": 0.8689915184323544,
+   "success": false,
+   "mean_block_pos_err_px": 1.0332413988256948e-05,
+   "final_block_pos_err_px": 1.3709690043556675e-05
+  },
+  {
+   "ep": 40,
+   "max_coverage": 0.9160138293591922,
+   "success": false,
+   "mean_block_pos_err_px": 1.43757497326765e-05,
+   "final_block_pos_err_px": 2.4721861474846102e-05
+  },
+  {
+   "ep": 45,
+   "max_coverage": 0.8605155707323431,
+   "success": false,
+   "mean_block_pos_err_px": 1.0344791413419565e-05,
+   "final_block_pos_err_px": 3.455852256667449e-06
+  },
+  {
+   "ep": 50,
+   "max_coverage": 0.8979970493366216,
+   "success": false,
+   "mean_block_pos_err_px": 7.59025351343582,
+   "final_block_pos_err_px": 9.293504931987034
+  },
+  {
+   "ep": 55,
+   "max_coverage": 0.8658402587692626,
+   "success": false,
+   "mean_block_pos_err_px": 5.109569236696973e-06,
+   "final_block_pos_err_px": 7.369389402143656e-06
+  },
+  {
+   "ep": 60,
+   "max_coverage": 0.8819691749570223,
+   "success": false,
+   "mean_block_pos_err_px": 6.738533883843893e-06,
+   "final_block_pos_err_px": 1.5356051531222364e-05
+  },
+  {
+   "ep": 65,
+   "max_coverage": 0.8865569077644017,
+   "success": false,
+   "mean_block_pos_err_px": 9.34655473825477e-06,
+   "final_block_pos_err_px": 1.764631953748658e-05
+  },
+  {
+   "ep": 70,
+   "max_coverage": 0.9237193684512166,
+   "success": false,
+   "mean_block_pos_err_px": 1.0873100346395975e-05,
+   "final_block_pos_err_px": 1.3572109851246801e-06
+  },
+  {
+   "ep": 75,
+   "max_coverage": 0.8861750326788089,
+   "success": false,
+   "mean_block_pos_err_px": 1.0652656346980598e-05,
+   "final_block_pos_err_px": 8.773854298680309e-06
+  },
+  {
+   "ep": 80,
+   "max_coverage": 0.8916667281106018,
+   "success": false,
+   "mean_block_pos_err_px": 9.791754480263018e-06,
+   "final_block_pos_err_px": 6.756917933626768e-06
+  },
+  {
+   "ep": 85,
+   "max_coverage": 0.8893112385546327,
+   "success": false,
+   "mean_block_pos_err_px": 1.0228491670612607e-05,
+   "final_block_pos_err_px": 1.0273775164913091e-05
+  },
+  {
+   "ep": 90,
+   "max_coverage": 0.8810676483070052,
+   "success": false,
+   "mean_block_pos_err_px": 1.3451844726864572e-05,
+   "final_block_pos_err_px": 7.956394780988176e-06
+  },
+  {
+   "ep": 95,
+   "max_coverage": 0.8637480050706164,
+   "success": false,
+   "mean_block_pos_err_px": 1.46521374502347e-05,
+   "final_block_pos_err_px": 2.5690546959034867e-05
+  },
+  {
+   "ep": 100,
+   "max_coverage": 0.8610726449701878,
+   "success": false,
+   "mean_block_pos_err_px": 6.784418225737563e-06,
+   "final_block_pos_err_px": 7.906419474274023e-06
+  },
+  {
+   "ep": 105,
+   "max_coverage": 0.9093008350494787,
+   "success": false,
+   "mean_block_pos_err_px": 7.535758973247435e-06,
+   "final_block_pos_err_px": 9.577643318714868e-06
+  },
+  {
+   "ep": 110,
+   "max_coverage": 0.8946909816880814,
+   "success": false,
+   "mean_block_pos_err_px": 7.280545960385443e-06,
+   "final_block_pos_err_px": 3.070970347937742e-06
+  },
+  {
+   "ep": 115,
+   "max_coverage": 0.9137002218121465,
+   "success": false,
+   "mean_block_pos_err_px": 2.140455843434256e-05,
+   "final_block_pos_err_px": 2.6270710761167465e-05
+  },
+  {
+   "ep": 120,
+   "max_coverage": 0.9026451404541478,
+   "success": false,
+   "mean_block_pos_err_px": 1.1324700237178307e-05,
+   "final_block_pos_err_px": 7.327107245068093e-06
+  },
+  {
+   "ep": 125,
+   "max_coverage": 0.9249559447274232,
+   "success": false,
+   "mean_block_pos_err_px": 3.6750355484511855e-05,
+   "final_block_pos_err_px": 8.647635962468224e-06
+  },
+  {
+   "ep": 130,
+   "max_coverage": 0.894147564578143,
+   "success": false,
+   "mean_block_pos_err_px": 5.874781986820631e-06,
+   "final_block_pos_err_px": 6.446353426285419e-06
+  },
+  {
+   "ep": 135,
+   "max_coverage": 0.9313350786176241,
+   "success": false,
+   "mean_block_pos_err_px": 1.3877620302921698e-05,
+   "final_block_pos_err_px": 1.228348669339761e-05
+  },
+  {
+   "ep": 140,
+   "max_coverage": 0.9215863744160802,
+   "success": false,
+   "mean_block_pos_err_px": 9.937542391822413e-06,
+   "final_block_pos_err_px": 1.2940454777983882e-05
+  },
+  {
+   "ep": 145,
+   "max_coverage": 0.9436693038546733,
+   "success": false,
+   "mean_block_pos_err_px": 9.759543123172271e-06,
+   "final_block_pos_err_px": 1.1766675932526258e-05
+  },
+  {
+   "ep": 150,
+   "max_coverage": 0.8732382579937186,
+   "success": false,
+   "mean_block_pos_err_px": 9.6991265891362e-06,
+   "final_block_pos_err_px": 8.760248941399625e-06
+  },
+  {
+   "ep": 155,
+   "max_coverage": 0.930825194551163,
+   "success": false,
+   "mean_block_pos_err_px": 9.679525294238156e-06,
+   "final_block_pos_err_px": 1.196344141665475e-05
+  },
+  {
+   "ep": 160,
+   "max_coverage": 0.9518872723837204,
+   "success": true,
+   "mean_block_pos_err_px": 1.1054882808132734e-05,
+   "final_block_pos_err_px": 1.3116429193099503e-05
+  },
+  {
+   "ep": 165,
+   "max_coverage": 0.8927068806108551,
+   "success": false,
+   "mean_block_pos_err_px": 1.0779969363854011e-05,
+   "final_block_pos_err_px": 2.5142365650760597e-06
+  },
+  {
+   "ep": 170,
+   "max_coverage": 0.9049787416779425,
+   "success": false,
+   "mean_block_pos_err_px": 1.4301045384620833e-05,
+   "final_block_pos_err_px": 7.597135798757306e-06
+  },
+  {
+   "ep": 175,
+   "max_coverage": 0.8764963951855974,
+   "success": false,
+   "mean_block_pos_err_px": 5.151425282661342e-05,
+   "final_block_pos_err_px": 0.00010421993549539217
+  },
+  {
+   "ep": 180,
+   "max_coverage": 0.8764243659831177,
+   "success": false,
+   "mean_block_pos_err_px": 5.668239820114147e-06,
+   "final_block_pos_err_px": 4.333088548504193e-06
+  },
+  {
+   "ep": 185,
+   "max_coverage": 0.9301790880550964,
+   "success": false,
+   "mean_block_pos_err_px": 4.608743387355379e-06,
+   "final_block_pos_err_px": 1.3507769308644928e-05
+  },
+  {
+   "ep": 190,
+   "max_coverage": 0.9158802759453177,
+   "success": false,
+   "mean_block_pos_err_px": 7.422220396872933e-05,
+   "final_block_pos_err_px": 1.1218286213967928e-05
+  },
+  {
+   "ep": 195,
+   "max_coverage": 0.9585972531542283,
+   "success": true,
+   "mean_block_pos_err_px": 9.706903753380431e-06,
+   "final_block_pos_err_px": 1.2474243275418518e-05
+  },
+  {
+   "ep": 200,
+   "max_coverage": 0.9065406176377987,
+   "success": false,
+   "mean_block_pos_err_px": 2.0337649232590074e-05,
+   "final_block_pos_err_px": 1.5141569931430318e-05
+  },
+  {
+   "ep": 205,
+   "max_coverage": 0.9095842512018488,
+   "success": false,
+   "mean_block_pos_err_px": 1.4917698159626458e-05,
+   "final_block_pos_err_px": 1.9425643676979218e-05
+  }
+ ]
+}

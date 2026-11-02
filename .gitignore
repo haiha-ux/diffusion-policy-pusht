@@ -1,0 +1,8 @@
+.venv/
+data/
+ckpt/
+__pycache__/
+*.pyc
+.pytest_cache/
+MUJOCO_LOG.TXT
+nohup.out
