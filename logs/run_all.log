@@ -1,0 +1,405 @@
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+dp_s0 {'step': 1000, 'train_loss': 0.039492104202508926, 'val_loss_ema': 0.040991321206092834, 'sec': 20}
+dp_s0 {'step': 2000, 'train_loss': 0.027506235986948013, 'val_loss_ema': 0.03421017527580261, 'sec': 40}
+dp_s0 {'step': 3000, 'train_loss': 0.025451332330703735, 'val_loss_ema': 0.031704992055892944, 'sec': 62}
+dp_s0 {'step': 4000, 'train_loss': 0.026843007653951645, 'val_loss_ema': 0.03051653318107128, 'sec': 86}
+dp_s0 {'step': 5000, 'train_loss': 0.029087956994771957, 'val_loss_ema': 0.03008515201508999, 'sec': 108}
+dp_s0 {'step': 6000, 'train_loss': 0.0215790793299675, 'val_loss_ema': 0.030038032680749893, 'sec': 132}
+dp_s0 {'step': 7000, 'train_loss': 0.017671702429652214, 'val_loss_ema': 0.030195895582437515, 'sec': 151}
+dp_s0 {'step': 8000, 'train_loss': 0.02125389873981476, 'val_loss_ema': 0.030543096363544464, 'sec': 170}
+dp_s0 {'step': 9000, 'train_loss': 0.020102351903915405, 'val_loss_ema': 0.031169038265943527, 'sec': 189}
+dp_s0 {'step': 10000, 'train_loss': 0.02276768535375595, 'val_loss_ema': 0.031868498772382736, 'sec': 212}
+dp_s0 {'step': 11000, 'train_loss': 0.01780298724770546, 'val_loss_ema': 0.03294191509485245, 'sec': 234}
+dp_s0 {'step': 12000, 'train_loss': 0.015226626768708229, 'val_loss_ema': 0.03422637656331062, 'sec': 252}
+dp_s0 {'step': 13000, 'train_loss': 0.01769137755036354, 'val_loss_ema': 0.03556490316987038, 'sec': 268}
+dp_s0 {'step': 14000, 'train_loss': 0.011704303324222565, 'val_loss_ema': 0.03702552244067192, 'sec': 291}
+dp_s0 {'step': 15000, 'train_loss': 0.015392892993986607, 'val_loss_ema': 0.0382920578122139, 'sec': 315}
+dp_s0 {'step': 16000, 'train_loss': 0.013993535190820694, 'val_loss_ema': 0.04010482877492905, 'sec': 339}
+dp_s0 {'step': 17000, 'train_loss': 0.020054742693901062, 'val_loss_ema': 0.04174046963453293, 'sec': 370}
+dp_s0 {'step': 18000, 'train_loss': 0.013663927093148232, 'val_loss_ema': 0.043426770716905594, 'sec': 392}
+dp_s0 {'step': 19000, 'train_loss': 0.01733475923538208, 'val_loss_ema': 0.04525462165474892, 'sec': 415}
+dp_s0 {'step': 20000, 'train_loss': 0.012629699893295765, 'val_loss_ema': 0.04729478806257248, 'sec': 443}
+dp_s0 {'step': 21000, 'train_loss': 0.01077483780682087, 'val_loss_ema': 0.04935562238097191, 'sec': 470}
+dp_s0 {'step': 22000, 'train_loss': 0.011798141524195671, 'val_loss_ema': 0.05161357298493385, 'sec': 503}
+dp_s0 {'step': 23000, 'train_loss': 0.01146327331662178, 'val_loss_ema': 0.05336268991231918, 'sec': 534}
+dp_s0 {'step': 24000, 'train_loss': 0.006908327341079712, 'val_loss_ema': 0.05554055795073509, 'sec': 567}
+dp_s0 {'step': 25000, 'train_loss': 0.010428743436932564, 'val_loss_ema': 0.05826130509376526, 'sec': 599}
+dp_s0 {'step': 26000, 'train_loss': 0.0065320925787091255, 'val_loss_ema': 0.060902826488018036, 'sec': 623}
+dp_s0 {'step': 27000, 'train_loss': 0.006464328616857529, 'val_loss_ema': 0.06424079835414886, 'sec': 651}
+dp_s0 {'step': 28000, 'train_loss': 0.009749967604875565, 'val_loss_ema': 0.06736050546169281, 'sec': 674}
+dp_s0 {'step': 29000, 'train_loss': 0.004856016952544451, 'val_loss_ema': 0.07042169570922852, 'sec': 702}
+dp_s0 {'step': 30000, 'train_loss': 0.006382167339324951, 'val_loss_ema': 0.07335273176431656, 'sec': 727}
+dp_s0 {'step': 31000, 'train_loss': 0.007291797548532486, 'val_loss_ema': 0.07643012702465057, 'sec': 754}
+dp_s0 {'step': 32000, 'train_loss': 0.009753458201885223, 'val_loss_ema': 0.07910045981407166, 'sec': 790}
+dp_s0 {'step': 33000, 'train_loss': 0.006260874215513468, 'val_loss_ema': 0.08199462294578552, 'sec': 827}
+dp_s0 {'step': 34000, 'train_loss': 0.004470455460250378, 'val_loss_ema': 0.08481316268444061, 'sec': 862}
+dp_s0 {'step': 35000, 'train_loss': 0.0072626397013664246, 'val_loss_ema': 0.08739326149225235, 'sec': 898}
+dp_s0 {'step': 36000, 'train_loss': 0.006257199682295322, 'val_loss_ema': 0.08948025107383728, 'sec': 934}
+dp_s0 {'step': 37000, 'train_loss': 0.0069428058341145515, 'val_loss_ema': 0.09095169603824615, 'sec': 970}
+dp_s0 {'step': 38000, 'train_loss': 0.0073964549228549, 'val_loss_ema': 0.09226454794406891, 'sec': 1007}
+dp_s0 {'step': 39000, 'train_loss': 0.004660937003791332, 'val_loss_ema': 0.09305597096681595, 'sec': 1042}
+dp_s0 {'step': 40000, 'train_loss': 0.004456749185919762, 'val_loss_ema': 0.09338304400444031, 'sec': 1078}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+bcc_s0 {'step': 1000, 'train_loss': 0.011716057546436787, 'val_loss_ema': 0.01734677143394947, 'sec': 3}
+bcc_s0 {'step': 2000, 'train_loss': 0.007966693490743637, 'val_loss_ema': 0.01615794561803341, 'sec': 6}
+bcc_s0 {'step': 3000, 'train_loss': 0.007805502042174339, 'val_loss_ema': 0.0162600539624691, 'sec': 9}
+bcc_s0 {'step': 4000, 'train_loss': 0.006761957425624132, 'val_loss_ema': 0.016723832115530968, 'sec': 12}
+bcc_s0 {'step': 5000, 'train_loss': 0.004121244419366121, 'val_loss_ema': 0.017304837703704834, 'sec': 15}
+bcc_s0 {'step': 6000, 'train_loss': 0.0045316629111766815, 'val_loss_ema': 0.017749669030308723, 'sec': 18}
+bcc_s0 {'step': 7000, 'train_loss': 0.0030075027607381344, 'val_loss_ema': 0.01828201860189438, 'sec': 21}
+bcc_s0 {'step': 8000, 'train_loss': 0.003477787133306265, 'val_loss_ema': 0.018645167350769043, 'sec': 24}
+bcc_s0 {'step': 9000, 'train_loss': 0.0030110829975456, 'val_loss_ema': 0.0190889835357666, 'sec': 27}
+bcc_s0 {'step': 10000, 'train_loss': 0.002617518650367856, 'val_loss_ema': 0.019411440938711166, 'sec': 30}
+bcc_s0 {'step': 11000, 'train_loss': 0.002679466735571623, 'val_loss_ema': 0.019620662555098534, 'sec': 33}
+bcc_s0 {'step': 12000, 'train_loss': 0.0021281330846250057, 'val_loss_ema': 0.01988658681511879, 'sec': 35}
+bcc_s0 {'step': 13000, 'train_loss': 0.001910063554532826, 'val_loss_ema': 0.020061461254954338, 'sec': 38}
+bcc_s0 {'step': 14000, 'train_loss': 0.0015059064608067274, 'val_loss_ema': 0.020246898755431175, 'sec': 41}
+bcc_s0 {'step': 15000, 'train_loss': 0.0015432247892022133, 'val_loss_ema': 0.02047712914645672, 'sec': 44}
+bcc_s0 {'step': 16000, 'train_loss': 0.001229589805006981, 'val_loss_ema': 0.020704736933112144, 'sec': 47}
+bcc_s0 {'step': 17000, 'train_loss': 0.001229345565661788, 'val_loss_ema': 0.020890675485134125, 'sec': 50}
+bcc_s0 {'step': 18000, 'train_loss': 0.001344473217613995, 'val_loss_ema': 0.02113339677453041, 'sec': 53}
+bcc_s0 {'step': 19000, 'train_loss': 0.0009549620444886386, 'val_loss_ema': 0.021270982921123505, 'sec': 56}
+bcc_s0 {'step': 20000, 'train_loss': 0.0009616654133424163, 'val_loss_ema': 0.021440215408802032, 'sec': 59}
+bcc_s0 {'step': 21000, 'train_loss': 0.0012524870689958334, 'val_loss_ema': 0.021558303385972977, 'sec': 62}
+bcc_s0 {'step': 22000, 'train_loss': 0.0008617202984169126, 'val_loss_ema': 0.021722717210650444, 'sec': 65}
+bcc_s0 {'step': 23000, 'train_loss': 0.0009256803896278143, 'val_loss_ema': 0.02191993221640587, 'sec': 68}
+bcc_s0 {'step': 24000, 'train_loss': 0.0007935062749311328, 'val_loss_ema': 0.022089634090662003, 'sec': 71}
+bcc_s0 {'step': 25000, 'train_loss': 0.0007239377591758966, 'val_loss_ema': 0.022236481308937073, 'sec': 74}
+bcc_s0 {'step': 26000, 'train_loss': 0.0006822899449616671, 'val_loss_ema': 0.02239086851477623, 'sec': 77}
+bcc_s0 {'step': 27000, 'train_loss': 0.0007217637612484396, 'val_loss_ema': 0.022569527849555016, 'sec': 80}
+bcc_s0 {'step': 28000, 'train_loss': 0.0005805236287415028, 'val_loss_ema': 0.02272125333547592, 'sec': 83}
+bcc_s0 {'step': 29000, 'train_loss': 0.0005151188233867288, 'val_loss_ema': 0.02284056693315506, 'sec': 86}
+bcc_s0 {'step': 30000, 'train_loss': 0.0005541743012145162, 'val_loss_ema': 0.022933578118681908, 'sec': 88}
+bcc_s0 {'step': 31000, 'train_loss': 0.0005054115899838507, 'val_loss_ema': 0.023051466792821884, 'sec': 91}
+bcc_s0 {'step': 32000, 'train_loss': 0.0005027668084949255, 'val_loss_ema': 0.023152491077780724, 'sec': 94}
+bcc_s0 {'step': 33000, 'train_loss': 0.00044486430124379694, 'val_loss_ema': 0.02323751710355282, 'sec': 97}
+bcc_s0 {'step': 34000, 'train_loss': 0.0006541997427120805, 'val_loss_ema': 0.0233260840177536, 'sec': 100}
+bcc_s0 {'step': 35000, 'train_loss': 0.000610806280747056, 'val_loss_ema': 0.023393969982862473, 'sec': 103}
+bcc_s0 {'step': 36000, 'train_loss': 0.000422114972025156, 'val_loss_ema': 0.02344602718949318, 'sec': 106}
+bcc_s0 {'step': 37000, 'train_loss': 0.00040261680260300636, 'val_loss_ema': 0.023481298238039017, 'sec': 109}
+bcc_s0 {'step': 38000, 'train_loss': 0.0003653764142654836, 'val_loss_ema': 0.023497482761740685, 'sec': 112}
+bcc_s0 {'step': 39000, 'train_loss': 0.0004145304556004703, 'val_loss_ema': 0.023511145263910294, 'sec': 115}
+bcc_s0 {'step': 40000, 'train_loss': 0.0003603916266001761, 'val_loss_ema': 0.023522816598415375, 'sec': 118}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+bc_s0 {'step': 1000, 'train_loss': 0.001179155195131898, 'val_loss_ema': 0.0010373486438766122, 'sec': 3}
+bc_s0 {'step': 2000, 'train_loss': 0.0012032367521896958, 'val_loss_ema': 0.0009532287949696183, 'sec': 6}
+bc_s0 {'step': 3000, 'train_loss': 0.0007147146388888359, 'val_loss_ema': 0.0009202449582517147, 'sec': 9}
+bc_s0 {'step': 4000, 'train_loss': 0.0009195086895488203, 'val_loss_ema': 0.0008919979445636272, 'sec': 12}
+bc_s0 {'step': 5000, 'train_loss': 0.000949530047364533, 'val_loss_ema': 0.0008893678314052522, 'sec': 15}
+bc_s0 {'step': 6000, 'train_loss': 0.00095282745314762, 'val_loss_ema': 0.0008842795505188406, 'sec': 18}
+bc_s0 {'step': 7000, 'train_loss': 0.0008145420579239726, 'val_loss_ema': 0.0008784114033915102, 'sec': 21}
+bc_s0 {'step': 8000, 'train_loss': 0.0005903065321035683, 'val_loss_ema': 0.000887119269464165, 'sec': 24}
+bc_s0 {'step': 9000, 'train_loss': 0.0006092030671425164, 'val_loss_ema': 0.0008845265838317573, 'sec': 27}
+bc_s0 {'step': 10000, 'train_loss': 0.0007803725311532617, 'val_loss_ema': 0.0008932735654525459, 'sec': 30}
+bc_s0 {'step': 11000, 'train_loss': 0.0006461753509938717, 'val_loss_ema': 0.0008919794345274568, 'sec': 33}
+bc_s0 {'step': 12000, 'train_loss': 0.000583104498218745, 'val_loss_ema': 0.0009064796613529325, 'sec': 35}
+bc_s0 {'step': 13000, 'train_loss': 0.000428837607614696, 'val_loss_ema': 0.0009178032632917166, 'sec': 38}
+bc_s0 {'step': 14000, 'train_loss': 0.0004358825390227139, 'val_loss_ema': 0.0009282795363105834, 'sec': 41}
+bc_s0 {'step': 15000, 'train_loss': 0.0004079639620613307, 'val_loss_ema': 0.0009458196582272649, 'sec': 44}
+bc_s0 {'step': 16000, 'train_loss': 0.00038589094765484333, 'val_loss_ema': 0.0009566858061589301, 'sec': 47}
+bc_s0 {'step': 17000, 'train_loss': 0.0005083205760456622, 'val_loss_ema': 0.0009703479590825737, 'sec': 50}
+bc_s0 {'step': 18000, 'train_loss': 0.0004204476426821202, 'val_loss_ema': 0.0009913460817188025, 'sec': 53}
+bc_s0 {'step': 19000, 'train_loss': 0.0004726728657260537, 'val_loss_ema': 0.0010130461305379868, 'sec': 55}
+bc_s0 {'step': 20000, 'train_loss': 0.0004282349837012589, 'val_loss_ema': 0.0010357123101130128, 'sec': 58}
+bc_s0 {'step': 21000, 'train_loss': 0.0003096568398177624, 'val_loss_ema': 0.0010702223517000675, 'sec': 61}
+bc_s0 {'step': 22000, 'train_loss': 0.00033312052255496383, 'val_loss_ema': 0.0010919686174020171, 'sec': 64}
+bc_s0 {'step': 23000, 'train_loss': 0.0003314572968520224, 'val_loss_ema': 0.0011232381220906973, 'sec': 67}
+bc_s0 {'step': 24000, 'train_loss': 0.00024558481527492404, 'val_loss_ema': 0.0011585713364183903, 'sec': 70}
+bc_s0 {'step': 25000, 'train_loss': 0.00037868903018534184, 'val_loss_ema': 0.0011974696535617113, 'sec': 73}
+bc_s0 {'step': 26000, 'train_loss': 0.00026982472627423704, 'val_loss_ema': 0.0012364463182166219, 'sec': 75}
+bc_s0 {'step': 27000, 'train_loss': 0.00026594335213303566, 'val_loss_ema': 0.0012728123692795634, 'sec': 78}
+bc_s0 {'step': 28000, 'train_loss': 0.0002287586685270071, 'val_loss_ema': 0.0013158849906176329, 'sec': 81}
+bc_s0 {'step': 29000, 'train_loss': 0.0002360768266953528, 'val_loss_ema': 0.0013556360499933362, 'sec': 84}
+bc_s0 {'step': 30000, 'train_loss': 0.0002673707786016166, 'val_loss_ema': 0.001384278992190957, 'sec': 87}
+bc_s0 {'step': 31000, 'train_loss': 0.00028693623607978225, 'val_loss_ema': 0.0014159029815346003, 'sec': 90}
+bc_s0 {'step': 32000, 'train_loss': 0.00021194924192968756, 'val_loss_ema': 0.0014479807578027248, 'sec': 93}
+bc_s0 {'step': 33000, 'train_loss': 0.00014670859673060477, 'val_loss_ema': 0.0014876477653160691, 'sec': 96}
+bc_s0 {'step': 34000, 'train_loss': 0.0002338750782655552, 'val_loss_ema': 0.0015148114180192351, 'sec': 98}
+bc_s0 {'step': 35000, 'train_loss': 0.0001373562845401466, 'val_loss_ema': 0.0015335571952164173, 'sec': 101}
+bc_s0 {'step': 36000, 'train_loss': 0.00015557490405626595, 'val_loss_ema': 0.0015461775474250317, 'sec': 104}
+bc_s0 {'step': 37000, 'train_loss': 0.00016588142898399383, 'val_loss_ema': 0.0015572942793369293, 'sec': 107}
+bc_s0 {'step': 38000, 'train_loss': 0.00018615188309922814, 'val_loss_ema': 0.0015702788950875401, 'sec': 110}
+bc_s0 {'step': 39000, 'train_loss': 0.0002025046560447663, 'val_loss_ema': 0.0015760372625663877, 'sec': 112}
+bc_s0 {'step': 40000, 'train_loss': 0.00015324409469030797, 'val_loss_ema': 0.0015786007279530168, 'sec': 115}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/.venv/lib/python3.12/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+dp_s0 ddim {'coverage': 0.8998820351725785, 'success': 0.54, 'rollout_sec': 49} {'endpoint_spread_px': 3.5249133110046387, 'single_sample_err_px': 23.375110626220703, 'best_of_k_err_px': 18.521406173706055, 'bimodal_frac': 0.015, 'k': 16, 'n_states': 200}
+dp_s0 ddpm {'coverage': 0.8972756519116962, 'success': 0.48, 'rollout_sec': 206} {'endpoint_spread_px': 3.111461877822876, 'single_sample_err_px': 23.54085922241211, 'best_of_k_err_px': 19.194869995117188, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+bcc_s0 ddim {'coverage': 0.5723160035375533, 'success': 0.2, 'rollout_sec': 2} {'endpoint_spread_px': 2.4207831302192062e-05, 'single_sample_err_px': 31.022480010986328, 'best_of_k_err_px': 31.022480010986328, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+bc_s0 ddim {'coverage': 0.47386767371174393, 'success': 0.2, 'rollout_sec': 3} {'endpoint_spread_px': 2.3598671759827994e-05, 'single_sample_err_px': 10.391674995422363, 'best_of_k_err_px': 10.391674041748047, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+dp_s1 {'step': 1000, 'train_loss': 0.036782849580049515, 'val_loss_ema': 0.03959495574235916, 'sec': 18}
+dp_s1 {'step': 2000, 'train_loss': 0.036272503435611725, 'val_loss_ema': 0.03357252851128578, 'sec': 32}
+dp_s1 {'step': 3000, 'train_loss': 0.030789773911237717, 'val_loss_ema': 0.03095177188515663, 'sec': 46}
+dp_s1 {'step': 4000, 'train_loss': 0.02115330845117569, 'val_loss_ema': 0.03008909337222576, 'sec': 61}
+dp_s1 {'step': 5000, 'train_loss': 0.026714220643043518, 'val_loss_ema': 0.02948254533112049, 'sec': 79}
+dp_s1 {'step': 6000, 'train_loss': 0.022459669038653374, 'val_loss_ema': 0.029330719262361526, 'sec': 97}
+dp_s1 {'step': 7000, 'train_loss': 0.024225980043411255, 'val_loss_ema': 0.029444580897688866, 'sec': 116}
+dp_s1 {'step': 8000, 'train_loss': 0.02307019755244255, 'val_loss_ema': 0.029916813597083092, 'sec': 132}
+dp_s1 {'step': 9000, 'train_loss': 0.016924111172556877, 'val_loss_ema': 0.03028564341366291, 'sec': 151}
+dp_s1 {'step': 10000, 'train_loss': 0.027751505374908447, 'val_loss_ema': 0.031173059716820717, 'sec': 169}
+dp_s1 {'step': 11000, 'train_loss': 0.02419249899685383, 'val_loss_ema': 0.03193384408950806, 'sec': 191}
+dp_s1 {'step': 12000, 'train_loss': 0.01713217794895172, 'val_loss_ema': 0.03284735232591629, 'sec': 210}
+dp_s1 {'step': 13000, 'train_loss': 0.017141815274953842, 'val_loss_ema': 0.033987920731306076, 'sec': 226}
+dp_s1 {'step': 14000, 'train_loss': 0.011771094053983688, 'val_loss_ema': 0.03545106202363968, 'sec': 243}
+dp_s1 {'step': 15000, 'train_loss': 0.015492264181375504, 'val_loss_ema': 0.03714911267161369, 'sec': 262}
+dp_s1 {'step': 16000, 'train_loss': 0.015748821198940277, 'val_loss_ema': 0.03874873369932175, 'sec': 287}
+dp_s1 {'step': 17000, 'train_loss': 0.014390112832188606, 'val_loss_ema': 0.0405033603310585, 'sec': 305}
+dp_s1 {'step': 18000, 'train_loss': 0.013138728216290474, 'val_loss_ema': 0.04228220507502556, 'sec': 328}
+dp_s1 {'step': 19000, 'train_loss': 0.011244220659136772, 'val_loss_ema': 0.04407239332795143, 'sec': 343}
+dp_s1 {'step': 20000, 'train_loss': 0.010744094848632812, 'val_loss_ema': 0.04603445529937744, 'sec': 355}
+dp_s1 {'step': 21000, 'train_loss': 0.011465316638350487, 'val_loss_ema': 0.04830299690365791, 'sec': 371}
+dp_s1 {'step': 22000, 'train_loss': 0.013344522565603256, 'val_loss_ema': 0.05037800595164299, 'sec': 393}
+dp_s1 {'step': 23000, 'train_loss': 0.011376450769603252, 'val_loss_ema': 0.05258307605981827, 'sec': 407}
+dp_s1 {'step': 24000, 'train_loss': 0.007139771711081266, 'val_loss_ema': 0.05546792969107628, 'sec': 424}
+dp_s1 {'step': 25000, 'train_loss': 0.010158494114875793, 'val_loss_ema': 0.05809498205780983, 'sec': 440}
+dp_s1 {'step': 26000, 'train_loss': 0.011687022633850574, 'val_loss_ema': 0.06051360070705414, 'sec': 460}
+dp_s1 {'step': 27000, 'train_loss': 0.009621547535061836, 'val_loss_ema': 0.06360460072755814, 'sec': 478}
+dp_s1 {'step': 28000, 'train_loss': 0.0055796424858272076, 'val_loss_ema': 0.0670432522892952, 'sec': 495}
+dp_s1 {'step': 29000, 'train_loss': 0.0092327194288373, 'val_loss_ema': 0.07017958164215088, 'sec': 511}
+dp_s1 {'step': 30000, 'train_loss': 0.007399559952318668, 'val_loss_ema': 0.07368863373994827, 'sec': 526}
+dp_s1 {'step': 31000, 'train_loss': 0.0074761235155165195, 'val_loss_ema': 0.07695891708135605, 'sec': 539}
+dp_s1 {'step': 32000, 'train_loss': 0.008829968050122261, 'val_loss_ema': 0.08013840019702911, 'sec': 558}
+dp_s1 {'step': 33000, 'train_loss': 0.006527696270495653, 'val_loss_ema': 0.08358405530452728, 'sec': 571}
+dp_s1 {'step': 34000, 'train_loss': 0.008105270564556122, 'val_loss_ema': 0.08675370365381241, 'sec': 586}
+dp_s1 {'step': 35000, 'train_loss': 0.008369207382202148, 'val_loss_ema': 0.08975698798894882, 'sec': 600}
+dp_s1 {'step': 36000, 'train_loss': 0.0049347300082445145, 'val_loss_ema': 0.09203288704156876, 'sec': 620}
+dp_s1 {'step': 37000, 'train_loss': 0.005316455382853746, 'val_loss_ema': 0.09391843527555466, 'sec': 642}
+dp_s1 {'step': 38000, 'train_loss': 0.00579817034304142, 'val_loss_ema': 0.09527894109487534, 'sec': 664}
+dp_s1 {'step': 39000, 'train_loss': 0.00611303374171257, 'val_loss_ema': 0.09617841243743896, 'sec': 678}
+dp_s1 {'step': 40000, 'train_loss': 0.006656583398580551, 'val_loss_ema': 0.09660514444112778, 'sec': 697}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+bcc_s1 {'step': 1000, 'train_loss': 0.013665175065398216, 'val_loss_ema': 0.01682009920477867, 'sec': 2}
+bcc_s1 {'step': 2000, 'train_loss': 0.009871067479252815, 'val_loss_ema': 0.01543207187205553, 'sec': 3}
+bcc_s1 {'step': 3000, 'train_loss': 0.008055532351136208, 'val_loss_ema': 0.015278701670467854, 'sec': 4}
+bcc_s1 {'step': 4000, 'train_loss': 0.005700381472706795, 'val_loss_ema': 0.015454183332622051, 'sec': 6}
+bcc_s1 {'step': 5000, 'train_loss': 0.005494580138474703, 'val_loss_ema': 0.015702562406659126, 'sec': 8}
+bcc_s1 {'step': 6000, 'train_loss': 0.004487961996346712, 'val_loss_ema': 0.015991419553756714, 'sec': 10}
+bcc_s1 {'step': 7000, 'train_loss': 0.0037309867329895496, 'val_loss_ema': 0.01644655130803585, 'sec': 11}
+bcc_s1 {'step': 8000, 'train_loss': 0.0029447576962411404, 'val_loss_ema': 0.01679590716958046, 'sec': 13}
+bcc_s1 {'step': 9000, 'train_loss': 0.002658161101862788, 'val_loss_ema': 0.017100872471928596, 'sec': 15}
+bcc_s1 {'step': 10000, 'train_loss': 0.002593425801023841, 'val_loss_ema': 0.017435388639569283, 'sec': 17}
+bcc_s1 {'step': 11000, 'train_loss': 0.0023701295722275972, 'val_loss_ema': 0.017702016979455948, 'sec': 18}
+bcc_s1 {'step': 12000, 'train_loss': 0.0019149414729326963, 'val_loss_ema': 0.017969174310564995, 'sec': 19}
+bcc_s1 {'step': 13000, 'train_loss': 0.0016795077826827765, 'val_loss_ema': 0.018245359882712364, 'sec': 21}
+bcc_s1 {'step': 14000, 'train_loss': 0.0016784897306934, 'val_loss_ema': 0.01856926642358303, 'sec': 23}
+bcc_s1 {'step': 15000, 'train_loss': 0.0015098212752491236, 'val_loss_ema': 0.0187588669359684, 'sec': 25}
+bcc_s1 {'step': 16000, 'train_loss': 0.0010378246661275625, 'val_loss_ema': 0.01889842189848423, 'sec': 26}
+bcc_s1 {'step': 17000, 'train_loss': 0.0013276797253638506, 'val_loss_ema': 0.019041717052459717, 'sec': 28}
+bcc_s1 {'step': 18000, 'train_loss': 0.0011861722450703382, 'val_loss_ema': 0.019185198470950127, 'sec': 30}
+bcc_s1 {'step': 19000, 'train_loss': 0.001045789453200996, 'val_loss_ema': 0.01937681809067726, 'sec': 32}
+bcc_s1 {'step': 20000, 'train_loss': 0.00098384078592062, 'val_loss_ema': 0.019529065117239952, 'sec': 34}
+bcc_s1 {'step': 21000, 'train_loss': 0.0009034271351993084, 'val_loss_ema': 0.019697630777955055, 'sec': 35}
+bcc_s1 {'step': 22000, 'train_loss': 0.0010196727234870195, 'val_loss_ema': 0.019837554544210434, 'sec': 37}
+bcc_s1 {'step': 23000, 'train_loss': 0.0008983028819784522, 'val_loss_ema': 0.019984012469649315, 'sec': 39}
+bcc_s1 {'step': 24000, 'train_loss': 0.0007840596372261643, 'val_loss_ema': 0.020132888108491898, 'sec': 40}
+bcc_s1 {'step': 25000, 'train_loss': 0.0004909029230475426, 'val_loss_ema': 0.020262759178876877, 'sec': 41}
+bcc_s1 {'step': 26000, 'train_loss': 0.0006929035298526287, 'val_loss_ema': 0.020430253818631172, 'sec': 43}
+bcc_s1 {'step': 27000, 'train_loss': 0.0006450915243476629, 'val_loss_ema': 0.02055658958852291, 'sec': 45}
+bcc_s1 {'step': 28000, 'train_loss': 0.0005512378411367536, 'val_loss_ema': 0.020672155544161797, 'sec': 47}
+bcc_s1 {'step': 29000, 'train_loss': 0.0005507764872163534, 'val_loss_ema': 0.02078329212963581, 'sec': 48}
+bcc_s1 {'step': 30000, 'train_loss': 0.0005010082386434078, 'val_loss_ema': 0.02086590602993965, 'sec': 49}
+bcc_s1 {'step': 31000, 'train_loss': 0.0005270405672490597, 'val_loss_ema': 0.020963821560144424, 'sec': 50}
+bcc_s1 {'step': 32000, 'train_loss': 0.00047947195707820356, 'val_loss_ema': 0.021061545237898827, 'sec': 51}
+bcc_s1 {'step': 33000, 'train_loss': 0.0005275027360767126, 'val_loss_ema': 0.021134424954652786, 'sec': 53}
+bcc_s1 {'step': 34000, 'train_loss': 0.0005048085586167872, 'val_loss_ema': 0.021191399544477463, 'sec': 54}
+bcc_s1 {'step': 35000, 'train_loss': 0.0005844668485224247, 'val_loss_ema': 0.021243872120976448, 'sec': 56}
+bcc_s1 {'step': 36000, 'train_loss': 0.00045603426406159997, 'val_loss_ema': 0.021291542798280716, 'sec': 58}
+bcc_s1 {'step': 37000, 'train_loss': 0.0004592523619066924, 'val_loss_ema': 0.02132408134639263, 'sec': 61}
+bcc_s1 {'step': 38000, 'train_loss': 0.00042873132042586803, 'val_loss_ema': 0.021345019340515137, 'sec': 62}
+bcc_s1 {'step': 39000, 'train_loss': 0.0004140104283578694, 'val_loss_ema': 0.021355558186769485, 'sec': 64}
+bcc_s1 {'step': 40000, 'train_loss': 0.000413597677834332, 'val_loss_ema': 0.0213587898761034, 'sec': 66}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+bc_s1 {'step': 1000, 'train_loss': 0.0014442477840930223, 'val_loss_ema': 0.0010862593771889806, 'sec': 2}
+bc_s1 {'step': 2000, 'train_loss': 0.0011287274537608027, 'val_loss_ema': 0.0009721735259518027, 'sec': 4}
+bc_s1 {'step': 3000, 'train_loss': 0.0010925958631560206, 'val_loss_ema': 0.0009298418299295008, 'sec': 5}
+bc_s1 {'step': 4000, 'train_loss': 0.000821383495349437, 'val_loss_ema': 0.0009067714563570917, 'sec': 6}
+bc_s1 {'step': 5000, 'train_loss': 0.0008656205027364194, 'val_loss_ema': 0.0008971770876087248, 'sec': 8}
+bc_s1 {'step': 6000, 'train_loss': 0.0006275013438425958, 'val_loss_ema': 0.000901839870493859, 'sec': 9}
+bc_s1 {'step': 7000, 'train_loss': 0.000622047926299274, 'val_loss_ema': 0.0009025590261444449, 'sec': 12}
+bc_s1 {'step': 8000, 'train_loss': 0.0005912055494263768, 'val_loss_ema': 0.000899870356079191, 'sec': 13}
+bc_s1 {'step': 9000, 'train_loss': 0.00047035832540132105, 'val_loss_ema': 0.0008999719866551459, 'sec': 14}
+bc_s1 {'step': 10000, 'train_loss': 0.0005942037678323686, 'val_loss_ema': 0.0009093123371712863, 'sec': 16}
+bc_s1 {'step': 11000, 'train_loss': 0.0005510314949788153, 'val_loss_ema': 0.0009145460790023208, 'sec': 18}
+bc_s1 {'step': 12000, 'train_loss': 0.0007175396895036101, 'val_loss_ema': 0.0009123301133513451, 'sec': 19}
+bc_s1 {'step': 13000, 'train_loss': 0.0005263899220153689, 'val_loss_ema': 0.0009169467375613749, 'sec': 20}
+bc_s1 {'step': 14000, 'train_loss': 0.0007195260259322822, 'val_loss_ema': 0.0009208068368025124, 'sec': 21}
+bc_s1 {'step': 15000, 'train_loss': 0.0006175024900585413, 'val_loss_ema': 0.0009311651811003685, 'sec': 22}
+bc_s1 {'step': 16000, 'train_loss': 0.00031776115065440536, 'val_loss_ema': 0.0009469226351939142, 'sec': 23}
+bc_s1 {'step': 17000, 'train_loss': 0.0004258090048097074, 'val_loss_ema': 0.0009572874987497926, 'sec': 25}
+bc_s1 {'step': 18000, 'train_loss': 0.0003950363025069237, 'val_loss_ema': 0.0009760995744727552, 'sec': 27}
+bc_s1 {'step': 19000, 'train_loss': 0.0005222829058766365, 'val_loss_ema': 0.0010043096262961626, 'sec': 28}
+bc_s1 {'step': 20000, 'train_loss': 0.0002988939522765577, 'val_loss_ema': 0.0010267499601468444, 'sec': 30}
+bc_s1 {'step': 21000, 'train_loss': 0.0003397341934032738, 'val_loss_ema': 0.001057195826433599, 'sec': 31}
+bc_s1 {'step': 22000, 'train_loss': 0.0005431390600278974, 'val_loss_ema': 0.0010922923684120178, 'sec': 33}
+bc_s1 {'step': 23000, 'train_loss': 0.0004804145428352058, 'val_loss_ema': 0.001125407638028264, 'sec': 35}
+bc_s1 {'step': 24000, 'train_loss': 0.0002611149684526026, 'val_loss_ema': 0.0011549047194421291, 'sec': 36}
+bc_s1 {'step': 25000, 'train_loss': 0.0002289524272782728, 'val_loss_ema': 0.0011877022916451097, 'sec': 37}
+bc_s1 {'step': 26000, 'train_loss': 0.00028296036180108786, 'val_loss_ema': 0.0012303816620260477, 'sec': 39}
+bc_s1 {'step': 27000, 'train_loss': 0.0002377718483330682, 'val_loss_ema': 0.0012746539432555437, 'sec': 41}
+bc_s1 {'step': 28000, 'train_loss': 0.0002393459144514054, 'val_loss_ema': 0.0013152698520570993, 'sec': 42}
+bc_s1 {'step': 29000, 'train_loss': 0.00026329117827117443, 'val_loss_ema': 0.0013475099112838507, 'sec': 44}
+bc_s1 {'step': 30000, 'train_loss': 0.00023738232266623527, 'val_loss_ema': 0.0013782611349597573, 'sec': 46}
+bc_s1 {'step': 31000, 'train_loss': 0.00033892603823915124, 'val_loss_ema': 0.0014100947882980108, 'sec': 48}
+bc_s1 {'step': 32000, 'train_loss': 0.0002768909907899797, 'val_loss_ema': 0.0014404848916456103, 'sec': 49}
+bc_s1 {'step': 33000, 'train_loss': 0.00020025971753057092, 'val_loss_ema': 0.0014718204038217664, 'sec': 51}
+bc_s1 {'step': 34000, 'train_loss': 0.00023073267948348075, 'val_loss_ema': 0.0014979831175878644, 'sec': 52}
+bc_s1 {'step': 35000, 'train_loss': 0.0002959935227409005, 'val_loss_ema': 0.00151811633259058, 'sec': 54}
+bc_s1 {'step': 36000, 'train_loss': 0.00014559912960976362, 'val_loss_ema': 0.0015306068817153573, 'sec': 56}
+bc_s1 {'step': 37000, 'train_loss': 0.0001725756737869233, 'val_loss_ema': 0.001543598249554634, 'sec': 58}
+bc_s1 {'step': 38000, 'train_loss': 0.00023913983022794127, 'val_loss_ema': 0.0015515056438744068, 'sec': 61}
+bc_s1 {'step': 39000, 'train_loss': 0.00015240708307828754, 'val_loss_ema': 0.001556697767227888, 'sec': 62}
+bc_s1 {'step': 40000, 'train_loss': 0.00017043339903466403, 'val_loss_ema': 0.001559963682666421, 'sec': 65}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/.venv/lib/python3.12/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+dp_s1 ddim {'coverage': 0.8741530473025823, 'success': 0.64, 'rollout_sec': 22} {'endpoint_spread_px': 2.9510629177093506, 'single_sample_err_px': 23.63031578063965, 'best_of_k_err_px': 19.385149002075195, 'bimodal_frac': 0.01, 'k': 16, 'n_states': 200}
+dp_s1 ddpm {'coverage': 0.8270313343958183, 'success': 0.42, 'rollout_sec': 304} {'endpoint_spread_px': 2.625624895095825, 'single_sample_err_px': 23.775362014770508, 'best_of_k_err_px': 20.001428604125977, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+bcc_s1 ddim {'coverage': 0.651858044730063, 'success': 0.28, 'rollout_sec': 2} {'endpoint_spread_px': 2.447605220368132e-05, 'single_sample_err_px': 30.813833236694336, 'best_of_k_err_px': 30.8138370513916, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+bc_s1 ddim {'coverage': 0.5290463983869707, 'success': 0.26, 'rollout_sec': 3} {'endpoint_spread_px': 2.4337768991244957e-05, 'single_sample_err_px': 10.441794395446777, 'best_of_k_err_px': 10.441794395446777, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+dp_s2 {'step': 1000, 'train_loss': 0.04422199726104736, 'val_loss_ema': 0.040703535079956055, 'sec': 18}
+dp_s2 {'step': 2000, 'train_loss': 0.029181383550167084, 'val_loss_ema': 0.03352096304297447, 'sec': 31}
+dp_s2 {'step': 3000, 'train_loss': 0.03395785391330719, 'val_loss_ema': 0.03119218721985817, 'sec': 46}
+dp_s2 {'step': 4000, 'train_loss': 0.034200094640254974, 'val_loss_ema': 0.029948940500617027, 'sec': 62}
+dp_s2 {'step': 5000, 'train_loss': 0.022448239848017693, 'val_loss_ema': 0.029452428221702576, 'sec': 79}
+dp_s2 {'step': 6000, 'train_loss': 0.022686034440994263, 'val_loss_ema': 0.02942296862602234, 'sec': 102}
+dp_s2 {'step': 7000, 'train_loss': 0.03134259954094887, 'val_loss_ema': 0.029587727040052414, 'sec': 121}
+dp_s2 {'step': 8000, 'train_loss': 0.02350952848792076, 'val_loss_ema': 0.0299406498670578, 'sec': 144}
+dp_s2 {'step': 9000, 'train_loss': 0.015900563448667526, 'val_loss_ema': 0.030402369797229767, 'sec': 163}
+dp_s2 {'step': 10000, 'train_loss': 0.019718457013368607, 'val_loss_ema': 0.031290143728256226, 'sec': 189}
+dp_s2 {'step': 11000, 'train_loss': 0.015772640705108643, 'val_loss_ema': 0.03247065469622612, 'sec': 209}
+dp_s2 {'step': 12000, 'train_loss': 0.015542684122920036, 'val_loss_ema': 0.03355488181114197, 'sec': 237}
+dp_s2 {'step': 13000, 'train_loss': 0.02061295136809349, 'val_loss_ema': 0.034744489938020706, 'sec': 257}
+dp_s2 {'step': 14000, 'train_loss': 0.017335455864667892, 'val_loss_ema': 0.036423154175281525, 'sec': 281}
+dp_s2 {'step': 15000, 'train_loss': 0.01776880770921707, 'val_loss_ema': 0.0375235378742218, 'sec': 306}
+dp_s2 {'step': 16000, 'train_loss': 0.015489582903683186, 'val_loss_ema': 0.0391884483397007, 'sec': 328}
+dp_s2 {'step': 17000, 'train_loss': 0.013726521283388138, 'val_loss_ema': 0.040654588490724564, 'sec': 349}
+dp_s2 {'step': 18000, 'train_loss': 0.011549530550837517, 'val_loss_ema': 0.04213808476924896, 'sec': 368}
+dp_s2 {'step': 19000, 'train_loss': 0.013259511440992355, 'val_loss_ema': 0.0438959039747715, 'sec': 387}
+dp_s2 {'step': 20000, 'train_loss': 0.009968109428882599, 'val_loss_ema': 0.04654575139284134, 'sec': 407}
+dp_s2 {'step': 21000, 'train_loss': 0.016156096011400223, 'val_loss_ema': 0.04874059930443764, 'sec': 429}
+dp_s2 {'step': 22000, 'train_loss': 0.014837406575679779, 'val_loss_ema': 0.05046580359339714, 'sec': 452}
+dp_s2 {'step': 23000, 'train_loss': 0.011844079941511154, 'val_loss_ema': 0.05265730991959572, 'sec': 468}
+dp_s2 {'step': 24000, 'train_loss': 0.0067216758616268635, 'val_loss_ema': 0.05504029244184494, 'sec': 491}
+dp_s2 {'step': 25000, 'train_loss': 0.008332882076501846, 'val_loss_ema': 0.057173434644937515, 'sec': 513}
+dp_s2 {'step': 26000, 'train_loss': 0.0069736298173666, 'val_loss_ema': 0.059662114828825, 'sec': 543}
+dp_s2 {'step': 27000, 'train_loss': 0.007559630088508129, 'val_loss_ema': 0.06271236389875412, 'sec': 566}
+dp_s2 {'step': 28000, 'train_loss': 0.009504666551947594, 'val_loss_ema': 0.06575118005275726, 'sec': 593}
+dp_s2 {'step': 29000, 'train_loss': 0.007878173142671585, 'val_loss_ema': 0.06923260539770126, 'sec': 615}
+dp_s2 {'step': 30000, 'train_loss': 0.008972560055553913, 'val_loss_ema': 0.0717722699046135, 'sec': 641}
+dp_s2 {'step': 31000, 'train_loss': 0.0064533366821706295, 'val_loss_ema': 0.07522640377283096, 'sec': 663}
+dp_s2 {'step': 32000, 'train_loss': 0.008475824259221554, 'val_loss_ema': 0.077901192009449, 'sec': 684}
+dp_s2 {'step': 33000, 'train_loss': 0.006533142179250717, 'val_loss_ema': 0.08140476047992706, 'sec': 709}
+dp_s2 {'step': 34000, 'train_loss': 0.009500292129814625, 'val_loss_ema': 0.08446767926216125, 'sec': 735}
+dp_s2 {'step': 35000, 'train_loss': 0.005295203998684883, 'val_loss_ema': 0.08721029758453369, 'sec': 758}
+dp_s2 {'step': 36000, 'train_loss': 0.0081715676933527, 'val_loss_ema': 0.0892685204744339, 'sec': 784}
+dp_s2 {'step': 37000, 'train_loss': 0.004701103083789349, 'val_loss_ema': 0.0909404382109642, 'sec': 811}
+dp_s2 {'step': 38000, 'train_loss': 0.005634408909827471, 'val_loss_ema': 0.09223751723766327, 'sec': 836}
+dp_s2 {'step': 39000, 'train_loss': 0.0063947997987270355, 'val_loss_ema': 0.0932001993060112, 'sec': 862}
+dp_s2 {'step': 40000, 'train_loss': 0.006053905934095383, 'val_loss_ema': 0.09369807690382004, 'sec': 889}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+bcc_s2 {'step': 1000, 'train_loss': 0.013496752828359604, 'val_loss_ema': 0.01657915860414505, 'sec': 1}
+bcc_s2 {'step': 2000, 'train_loss': 0.008609903044998646, 'val_loss_ema': 0.015698285773396492, 'sec': 2}
+bcc_s2 {'step': 3000, 'train_loss': 0.006379891186952591, 'val_loss_ema': 0.015854842960834503, 'sec': 3}
+bcc_s2 {'step': 4000, 'train_loss': 0.006036285310983658, 'val_loss_ema': 0.016315007582306862, 'sec': 4}
+bcc_s2 {'step': 5000, 'train_loss': 0.006277968175709248, 'val_loss_ema': 0.01669749990105629, 'sec': 5}
+bcc_s2 {'step': 6000, 'train_loss': 0.004557853098958731, 'val_loss_ema': 0.016799135133624077, 'sec': 6}
+bcc_s2 {'step': 7000, 'train_loss': 0.003751931246370077, 'val_loss_ema': 0.016843974590301514, 'sec': 7}
+bcc_s2 {'step': 8000, 'train_loss': 0.003066275967285037, 'val_loss_ema': 0.017107132822275162, 'sec': 9}
+bcc_s2 {'step': 9000, 'train_loss': 0.0023155396338552237, 'val_loss_ema': 0.01741899736225605, 'sec': 10}
+bcc_s2 {'step': 10000, 'train_loss': 0.002522104186937213, 'val_loss_ema': 0.01770118996500969, 'sec': 11}
+bcc_s2 {'step': 11000, 'train_loss': 0.002147461287677288, 'val_loss_ema': 0.017989913001656532, 'sec': 12}
+bcc_s2 {'step': 12000, 'train_loss': 0.0018360852263867855, 'val_loss_ema': 0.018187718465924263, 'sec': 13}
+bcc_s2 {'step': 13000, 'train_loss': 0.0017506279982626438, 'val_loss_ema': 0.018489040434360504, 'sec': 14}
+bcc_s2 {'step': 14000, 'train_loss': 0.0018920223228633404, 'val_loss_ema': 0.01869502104818821, 'sec': 15}
+bcc_s2 {'step': 15000, 'train_loss': 0.0014230927918106318, 'val_loss_ema': 0.018941620364785194, 'sec': 16}
+bcc_s2 {'step': 16000, 'train_loss': 0.001848358428105712, 'val_loss_ema': 0.019163314253091812, 'sec': 17}
+bcc_s2 {'step': 17000, 'train_loss': 0.0012895036488771439, 'val_loss_ema': 0.019316140562295914, 'sec': 18}
+bcc_s2 {'step': 18000, 'train_loss': 0.0013526600087061524, 'val_loss_ema': 0.019456708803772926, 'sec': 19}
+bcc_s2 {'step': 19000, 'train_loss': 0.0010725614847615361, 'val_loss_ema': 0.019619086757302284, 'sec': 21}
+bcc_s2 {'step': 20000, 'train_loss': 0.0010687438771128654, 'val_loss_ema': 0.01975814625620842, 'sec': 22}
+bcc_s2 {'step': 21000, 'train_loss': 0.0010420979233458638, 'val_loss_ema': 0.01987689733505249, 'sec': 23}
+bcc_s2 {'step': 22000, 'train_loss': 0.0008881888352334499, 'val_loss_ema': 0.02002556622028351, 'sec': 24}
+bcc_s2 {'step': 23000, 'train_loss': 0.0008537988178431988, 'val_loss_ema': 0.020172949880361557, 'sec': 25}
+bcc_s2 {'step': 24000, 'train_loss': 0.0008303923532366753, 'val_loss_ema': 0.020324496552348137, 'sec': 26}
+bcc_s2 {'step': 25000, 'train_loss': 0.0007317174458876252, 'val_loss_ema': 0.02043950743973255, 'sec': 28}
+bcc_s2 {'step': 26000, 'train_loss': 0.0006410818314179778, 'val_loss_ema': 0.02057364583015442, 'sec': 28}
+bcc_s2 {'step': 27000, 'train_loss': 0.0006462698802351952, 'val_loss_ema': 0.020712440833449364, 'sec': 30}
+bcc_s2 {'step': 28000, 'train_loss': 0.0006735767237842083, 'val_loss_ema': 0.020828288048505783, 'sec': 31}
+bcc_s2 {'step': 29000, 'train_loss': 0.0006229563150554895, 'val_loss_ema': 0.0209211278706789, 'sec': 32}
+bcc_s2 {'step': 30000, 'train_loss': 0.0005662202602252364, 'val_loss_ema': 0.02102903462946415, 'sec': 33}
+bcc_s2 {'step': 31000, 'train_loss': 0.0006904522888362408, 'val_loss_ema': 0.021122382953763008, 'sec': 35}
+bcc_s2 {'step': 32000, 'train_loss': 0.0004898143233731389, 'val_loss_ema': 0.02120266668498516, 'sec': 36}
+bcc_s2 {'step': 33000, 'train_loss': 0.0004928515991196036, 'val_loss_ema': 0.021287064999341965, 'sec': 37}
+bcc_s2 {'step': 34000, 'train_loss': 0.0005085915327072144, 'val_loss_ema': 0.02136753872036934, 'sec': 38}
+bcc_s2 {'step': 35000, 'train_loss': 0.0005014845519326627, 'val_loss_ema': 0.021418431773781776, 'sec': 39}
+bcc_s2 {'step': 36000, 'train_loss': 0.00043699570233002305, 'val_loss_ema': 0.021443907171487808, 'sec': 40}
+bcc_s2 {'step': 37000, 'train_loss': 0.0004112737369723618, 'val_loss_ema': 0.021470313891768456, 'sec': 41}
+bcc_s2 {'step': 38000, 'train_loss': 0.0004479468916542828, 'val_loss_ema': 0.021493175998330116, 'sec': 42}
+bcc_s2 {'step': 39000, 'train_loss': 0.0004371043178252876, 'val_loss_ema': 0.02150552347302437, 'sec': 43}
+bcc_s2 {'step': 40000, 'train_loss': 0.0005567991174757481, 'val_loss_ema': 0.02151205949485302, 'sec': 44}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/train.py:77: UserWarning: Converting a tensor with requires_grad=True to a scalar may lead to unexpected behavior.
+Consider using tensor.detach() first. (Triggered internally at /pytorch/torch/csrc/autograd/generated/python_variable_methods.cpp:836.)
+  rows.append(dict(step=step, train_loss=float(loss), val_loss_ema=val_loss(ema), sec=round(time.time() - t0)))
+bc_s2 {'step': 1000, 'train_loss': 0.001582900993525982, 'val_loss_ema': 0.001056738430634141, 'sec': 1}
+bc_s2 {'step': 2000, 'train_loss': 0.0010278255213052034, 'val_loss_ema': 0.0009530923562124372, 'sec': 2}
+bc_s2 {'step': 3000, 'train_loss': 0.0009357062517665327, 'val_loss_ema': 0.0009141067857854068, 'sec': 3}
+bc_s2 {'step': 4000, 'train_loss': 0.001129543874412775, 'val_loss_ema': 0.000888780050445348, 'sec': 4}
+bc_s2 {'step': 5000, 'train_loss': 0.0007734872633591294, 'val_loss_ema': 0.0008774991147220135, 'sec': 5}
+bc_s2 {'step': 6000, 'train_loss': 0.0008098513353615999, 'val_loss_ema': 0.000878448539879173, 'sec': 7}
+bc_s2 {'step': 7000, 'train_loss': 0.0006823857547715306, 'val_loss_ema': 0.0008760159253142774, 'sec': 8}
+bc_s2 {'step': 8000, 'train_loss': 0.0005232529947534204, 'val_loss_ema': 0.0008909618481993675, 'sec': 9}
+bc_s2 {'step': 9000, 'train_loss': 0.0006287338910624385, 'val_loss_ema': 0.0009049952495843172, 'sec': 11}
+bc_s2 {'step': 10000, 'train_loss': 0.0005959592526778579, 'val_loss_ema': 0.0009208857663907111, 'sec': 12}
+bc_s2 {'step': 11000, 'train_loss': 0.0007970158476382494, 'val_loss_ema': 0.0009279936784878373, 'sec': 13}
+bc_s2 {'step': 12000, 'train_loss': 0.00043340460979379714, 'val_loss_ema': 0.0009423786541447043, 'sec': 14}
+bc_s2 {'step': 13000, 'train_loss': 0.000525562500115484, 'val_loss_ema': 0.0009658336057327688, 'sec': 15}
+bc_s2 {'step': 14000, 'train_loss': 0.00045705196680501103, 'val_loss_ema': 0.000978905358351767, 'sec': 16}
+bc_s2 {'step': 15000, 'train_loss': 0.0004961626254953444, 'val_loss_ema': 0.0009963307529687881, 'sec': 17}
+bc_s2 {'step': 16000, 'train_loss': 0.00040584366070106626, 'val_loss_ema': 0.0010088643757626414, 'sec': 19}
+bc_s2 {'step': 17000, 'train_loss': 0.000523048103787005, 'val_loss_ema': 0.0010297719854861498, 'sec': 20}
+bc_s2 {'step': 18000, 'train_loss': 0.0006748826708644629, 'val_loss_ema': 0.0010506280232220888, 'sec': 22}
+bc_s2 {'step': 19000, 'train_loss': 0.0002614283002912998, 'val_loss_ema': 0.0010795925045385957, 'sec': 23}
+bc_s2 {'step': 20000, 'train_loss': 0.0003135406586807221, 'val_loss_ema': 0.0011057129595428705, 'sec': 25}
+bc_s2 {'step': 21000, 'train_loss': 0.0005926383309997618, 'val_loss_ema': 0.001142236520536244, 'sec': 26}
+bc_s2 {'step': 22000, 'train_loss': 0.0002982011064887047, 'val_loss_ema': 0.0011761551722884178, 'sec': 28}
+bc_s2 {'step': 23000, 'train_loss': 0.00031484058126807213, 'val_loss_ema': 0.001203442458063364, 'sec': 29}
+bc_s2 {'step': 24000, 'train_loss': 0.00017432065214961767, 'val_loss_ema': 0.001238117110915482, 'sec': 30}
+bc_s2 {'step': 25000, 'train_loss': 0.00028817012207582593, 'val_loss_ema': 0.0012797749368473887, 'sec': 31}
+bc_s2 {'step': 26000, 'train_loss': 0.0003411898505873978, 'val_loss_ema': 0.0013239799300208688, 'sec': 32}
+bc_s2 {'step': 27000, 'train_loss': 0.00030150136444717646, 'val_loss_ema': 0.0013672439381480217, 'sec': 33}
+bc_s2 {'step': 28000, 'train_loss': 0.00020741144544444978, 'val_loss_ema': 0.001413660473190248, 'sec': 34}
+bc_s2 {'step': 29000, 'train_loss': 0.00018352741608396173, 'val_loss_ema': 0.0014538825489580631, 'sec': 36}
+bc_s2 {'step': 30000, 'train_loss': 0.00023174789384938776, 'val_loss_ema': 0.001483332016505301, 'sec': 37}
+bc_s2 {'step': 31000, 'train_loss': 0.0002065247972495854, 'val_loss_ema': 0.0015208671102300286, 'sec': 39}
+bc_s2 {'step': 32000, 'train_loss': 0.00024793011834844947, 'val_loss_ema': 0.0015530572272837162, 'sec': 41}
+bc_s2 {'step': 33000, 'train_loss': 0.00018062975141219795, 'val_loss_ema': 0.0015975962160155177, 'sec': 44}
+bc_s2 {'step': 34000, 'train_loss': 0.000293209042865783, 'val_loss_ema': 0.001624670927412808, 'sec': 47}
+bc_s2 {'step': 35000, 'train_loss': 0.00021020398708060384, 'val_loss_ema': 0.001652267063036561, 'sec': 47}
+bc_s2 {'step': 36000, 'train_loss': 0.00015256216283887625, 'val_loss_ema': 0.0016643828712403774, 'sec': 49}
+bc_s2 {'step': 37000, 'train_loss': 0.00020363405928947031, 'val_loss_ema': 0.001677360269241035, 'sec': 50}
+bc_s2 {'step': 38000, 'train_loss': 0.0001463554217480123, 'val_loss_ema': 0.0016881009796634316, 'sec': 51}
+bc_s2 {'step': 39000, 'train_loss': 0.00016662789857946336, 'val_loss_ema': 0.0016938737826421857, 'sec': 52}
+bc_s2 {'step': 40000, 'train_loss': 0.00019016646547243, 'val_loss_ema': 0.0016971590230241418, 'sec': 53}
+/home/sw-haiha/Hai/portfolio/diffusion-policy-pusht/.venv/lib/python3.12/site-packages/pygame/pkgdata.py:25: UserWarning: pkg_resources is deprecated as an API. See https://setuptools.pypa.io/en/latest/pkg_resources.html. The pkg_resources package is slated for removal as early as 2025-11-30. Refrain from using this package or pin to Setuptools<81.
+  from pkg_resources import resource_stream, resource_exists
+dp_s2 ddim {'coverage': 0.823350972408925, 'success': 0.48, 'rollout_sec': 44} {'endpoint_spread_px': 3.100111722946167, 'single_sample_err_px': 24.0947265625, 'best_of_k_err_px': 20.021156311035156, 'bimodal_frac': 0.01, 'k': 16, 'n_states': 200}
+dp_s2 ddpm {'coverage': 0.8386214407539617, 'success': 0.6, 'rollout_sec': 340} {'endpoint_spread_px': 3.0671236515045166, 'single_sample_err_px': 24.13581085205078, 'best_of_k_err_px': 19.792539596557617, 'bimodal_frac': 0.005, 'k': 16, 'n_states': 200}
+bcc_s2 ddim {'coverage': 0.6958611279609558, 'success': 0.28, 'rollout_sec': 2} {'endpoint_spread_px': 2.2468566385214217e-05, 'single_sample_err_px': 29.558927536010742, 'best_of_k_err_px': 29.55892562866211, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
+bc_s2 ddim {'coverage': 0.6293643847646233, 'success': 0.36, 'rollout_sec': 3} {'endpoint_spread_px': 2.3136139134294353e-05, 'single_sample_err_px': 10.643014907836914, 'best_of_k_err_px': 10.643013954162598, 'bimodal_frac': 0.0, 'k': 16, 'n_states': 200}
